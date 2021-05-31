@@ -1,20 +1,21 @@
-const age = function (old){
-    console.log("Hello there");
-if (old >= 18){
-    return true;
-}
-    
-  else{
-      console.log("Hey kiddo");
-    return false;
-}
+const isAdult = function(age) {
+    if (age >= 18) {
+        return true;
+    } else {
+        return false;
+    }
 };
 
-const callAge = function(callsAge){
-    const ages = age (18);
+const greet = function(age) {
+    if (isAdult(age)) {
+        return "Hello there";
+    } else {
+        return "Hey kiddo";
+    }
 };
 
-console.log(callAge());
+console.log(greet(125)); 
+console.log(greet(8));
 
 const vat = function (number1, number2){
  return number1 * number2 + number1;
